@@ -14,5 +14,10 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
+  },
+  bottom: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })

@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView, TouchableOpacity } from 'react-native'
+import {
+  ScrollView,
+  Text,
+  KeyboardAvoidingView,
+  TouchableOpacity,
+  requireNativeComponent
+} from 'react-native'
 import { connect } from 'react-redux'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
@@ -7,6 +13,7 @@ import {getApiType} from '../Redux/demoRedux'
 
 // Styles
 import styles from './Styles/DemoScrScreenStyle'
+const Bulb = requireNativeComponent('Bulb')
 
 class DemoScrScreen extends Component {
   constructor (props) {
@@ -18,6 +25,10 @@ class DemoScrScreen extends Component {
 
   getApiFromSV = () => {
     this.props.getAPi()
+  }
+  _onStatusChange = (e) => {
+    this.setState({message: 'click oke'})
+    console.log('from native:', e)
   }
   static getDerivedStateFromProps (nextProps, prevState) {
     console.log(nextProps)
@@ -32,6 +43,12 @@ class DemoScrScreen extends Component {
             onPress={this.getApiFromSV}>
             <Text>get api</Text>
           </TouchableOpacity>
+          <Bulb
+            onStatusChange={this._onStatusChange}
+            isOn={true}
+            style={{
+            height: 60
+          }}/>
         </KeyboardAvoidingView>
       </ScrollView>
     )
