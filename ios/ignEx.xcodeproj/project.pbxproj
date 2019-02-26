@@ -49,6 +49,10 @@
 		85A3156274BF4017B4C9D3BB /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F76CBCAC1F244949D637F59 /* libRNGestureHandler.a */; };
 		8A9DF1C7527342D2837E58D3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC3A64A7577E4D22B4FF629F /* FontAwesome.ttf */; };
 		8D989BB3E98D4AE0B9A20F88 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55AAB8C77AFB44EEB55F3C56 /* AntDesign.ttf */; };
+		8D9C6B8F2225160800A54A29 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C6B8E2225160800A54A29 /* buttonView.swift */; };
+		8D9C6B912225168600A54A29 /* Bulb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C6B902225168600A54A29 /* Bulb.swift */; };
+		8D9C6B93222516F300A54A29 /* Bulb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C6B92222516F300A54A29 /* Bulb.m */; };
+		8D9C6B9922251A7A00A54A29 /* btnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D9C6B9822251A7A00A54A29 /* btnView.xib */; };
 		8FC36AAA01A940C4810106D4 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A5D829FCCC44FF9DC1FEEC /* MaterialCommunityIcons.ttf */; };
 		9A53E5F4F6774F47BCA51641 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCEB785BB1B4684BF27ED64 /* libRNDeviceInfo.a */; };
 		A91A7396822F4074BA14BC28 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F321175DED6B48FDBF7A005B /* EvilIcons.ttf */; };
@@ -400,6 +404,11 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8B106E0ACBE24B25B7EAAD9D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		8D9C6B8D2225160700A54A29 /* ignEx-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ignEx-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D9C6B8E2225160800A54A29 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
+		8D9C6B902225168600A54A29 /* Bulb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulb.swift; sourceTree = "<group>"; };
+		8D9C6B92222516F300A54A29 /* Bulb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bulb.m; sourceTree = "<group>"; };
+		8D9C6B9822251A7A00A54A29 /* btnView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = btnView.xib; sourceTree = "<group>"; };
 		A3D1B22F44DD4CEE866EFEBA /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		A950C6C9752B4B4F9E36229A /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNVectorIcons-tvOS.a"; sourceTree = "<group>"; };
 		AD1676D1F7514C0590D374D1 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
@@ -554,6 +563,7 @@
 		13B07FAE1A68108700A75B9A /* ignEx */ = {
 			isa = PBXGroup;
 			children = (
+				8D9C6B8C2225159900A54A29 /* moduleButton */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -730,6 +740,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8D9C6B8C2225159900A54A29 /* moduleButton */ = {
+			isa = PBXGroup;
+			children = (
+				8D9C6B8E2225160800A54A29 /* buttonView.swift */,
+				8D9C6B8D2225160700A54A29 /* ignEx-Bridging-Header.h */,
+				8D9C6B902225168600A54A29 /* Bulb.swift */,
+				8D9C6B92222516F300A54A29 /* Bulb.m */,
+				8D9C6B9822251A7A00A54A29 /* btnView.xib */,
+			);
+			name = moduleButton;
+			sourceTree = "<group>";
+		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -826,6 +848,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1010;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1224,6 +1249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8D9C6B9922251A7A00A54A29 /* btnView.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				8D989BB3E98D4AE0B9A20F88 /* AntDesign.ttf in Resources */,
 				32EE8424CB5C4C618C149012 /* Entypo.ttf in Resources */,
@@ -1304,7 +1330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9C6B93222516F300A54A29 /* Bulb.m in Sources */,
+				8D9C6B8F2225160800A54A29 /* buttonView.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				8D9C6B912225168600A54A29 /* Bulb.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1357,6 +1386,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1391,6 +1421,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1423,6 +1454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
@@ -1440,6 +1472,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ignEx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ignEx-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1448,6 +1483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1464,6 +1500,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ignEx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ignEx-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
